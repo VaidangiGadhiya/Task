@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Practical Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4b0082;
+            text-align: center;
+        }
+
+        /* Form Style */
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .form-container label {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            background: #8a2be2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background: #7a1ed0;
+        }
+
+        /* Radio button alignment */
+        .gender-options {
+            display: flex;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .gender-options label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+        }
+
+        .gender-options input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Table Style */
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #6c757d;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4b0082;
+        }
+
+        /* Music */
+        .music-player {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Buttons */
+        .button-group {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .button-group button {
+            margin: 5px;
+            padding: 10px 20px;
+            background: #8a2be2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-group button:hover {
+            background: #7a1ed0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <div class="form-container">
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" required>
+
+            <label>Gender</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <h2>Music Player</h2>
+    <div class="music-player">
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <h2>Buttons Example</h2>
+    <div class="button-group">
+        <button>Click Me</button>
+        <button>Submit</button>
+        <button>Cancel</button>
+    </div>
+
+</body>
+</html>

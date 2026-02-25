@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff0f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .reg-container {
+            background: #ffffff;
+            padding: 20px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4b0082;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+            margin-top: 8px;
+            display: block;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #8a2be2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 12px;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #7a1ed0;
+        }
+
+        .gender-options {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+            align-items: center;  /* Align radio button with text */
+        }
+
+        .gender-options label {
+            display: flex;
+            align-items: center;  /* Ensure text is next to button */
+            font-size: 14px;
+        }
+
+        .gender-options input[type="radio"] {
+            margin-right: 5px;  /* Space between button and label */
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .signup-link a {
+            color: #8a2be2;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="reg-container">
+        <h2>Registration Form</h2>
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Full Name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" required>
+
+            <label>Gender</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+
+            <label>Country</label>
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Other</option>
+            </select>
+
+            <label>Address</label>
+            <textarea placeholder="Enter Your Address"></textarea>
+
+            <button type="submit">Register</button>
+
+            <div class="signup-link">
+                Already have an account? <a href="#">Login Here</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Webpage Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5; /* light gray background */
+        }
+
+        header {
+            background-color: #6c757d; /* soft gray */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #adb5bd; /* light gray/nav bar */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            background: #ffffff;
+            padding: 15px;
+            margin-right: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .main-content h2, .sidebar h2 {
+            color: #495057; /* dark gray text */
+            margin-bottom: 10px;
+        }
+
+        .main-content p, .sidebar p {
+            line-height: 1.5;
+            font-size: 14px;
+            color: #495057;
+        }
+
+        footer {
+            background-color: #6c757d;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Static Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>Welcome to our simple static webpage. You can add your content here and show the layout in a neat way.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac eros at libero malesuada suscipit.</p>
+        </div>
+
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Quick Links:</p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+            <p>Additional information can go here.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 My Static Webpage. All rights reserved.
+    </footer>
+</body>
+</html>
