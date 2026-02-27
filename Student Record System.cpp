@@ -3,7 +3,6 @@
 
 #define MAX 100
 
-// Structure Declaration
 struct Student {
     int roll;
     char name[50];
@@ -13,7 +12,6 @@ struct Student {
 struct Student s[MAX];
 int count = 0;
 
-// Function Prototypes
 void addStudent();
 void displayStudents();
 void searchStudent();
@@ -49,7 +47,6 @@ int main() {
     return 0;
 }
 
-// Function to Add Student
 void addStudent() {
     if(count >= MAX) {
         printf("Student list full! Cannot add more.\n");
@@ -69,7 +66,6 @@ void addStudent() {
     printf("Student Added Successfully!\n");
 }
 
-// Function to Display All Students
 void displayStudents() {
     if(count == 0) {
         printf("\nNo records found!\n");
@@ -82,7 +78,6 @@ void displayStudents() {
     }
 }
 
-// Function to Search Student by Roll Number
 void searchStudent() {
     if(count == 0) {
         printf("\nNo records found!\n");
@@ -104,4 +99,5 @@ void searchStudent() {
     if(!found) {
         printf("No student found with Roll Number %d.\n", rollNo);
     }
+
 }
